@@ -4,6 +4,9 @@ load("rpm_log2_mean_DRG")
 # Sample information
 load("sample_mean")
 
+# Temperature (temp)
+load("temperature")
+
 # PCA
 pca <- prcomp(rpm_log2_mean_DRG[sample_mean$set!="weekly",],scale=F)
 
@@ -58,3 +61,7 @@ points3d(pca_mean[c(2,4),],size=5,col="darkorange2")
 lines3d(pca_mean[c(2,4),],lwd=3,col="darkorange2")
 
 points3d(w1m,w2m,w3m,size=5)
+
+# Sigmoid curve
+res <- nls(amp ~ min + (max-min)/(1+exp(A*(temp-B))),start=list(min=min(amp),max=max(amp),A=-1,B=10))
+conf <-  confint(res)
