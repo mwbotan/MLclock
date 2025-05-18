@@ -20,3 +20,5 @@ Leave-one-out cross-validation for NNdis and NNang
 ### score_importance.py
 Importance estimation for NN models
 
+## IntAmpR
+R-scripts for estimating integrated amplitude from single-time-point transcriptome
