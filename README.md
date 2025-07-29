@@ -22,3 +22,6 @@ Importance estimation for NN models
 
 ## IntAmpR
 R-scripts for estimating integrated amplitude from single-time-point transcriptome
+
+## RNAseqAnalysis
+R-scripts for RNA-seq analysis for DRG (diel rhythmic gene) detection
