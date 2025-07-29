@@ -24,4 +24,4 @@ Importance estimation for NN models
 R-scripts for estimating integrated amplitude from single-time-point transcriptome
 
 ## RNAseqAnalysis
-R-scripts for RNA-seq analysis for DRG (diel rhythmic gene) detection
+R scripts for DRG (diel rhythmic gene) detection in RNA-seq analysis.
